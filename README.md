@@ -24,3 +24,8 @@ containing the regression analysis and working data along with the coefficients.
 ![alt text](https://github.com/prilcool/Intel-devmesh-codeproject-two/blob/main/Assets/out.PNG)
 
 
+
+## Result
+You can see the The Pearsons correlation is 0.529809  
+You can see prediction that  Using the formula y=a+(b*50) We forcast that spending $50 on advertising can result in $84.4028 in sales
+![alt text](https://github.com/prilcool/Intel-devmesh-codeproject-two/blob/main/Assets/result.PNG)
