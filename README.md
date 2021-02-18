@@ -21,6 +21,6 @@ On successfull run :
 You should be able to download the file containing the out put from the left hand side in jupyter notebook  named  regression.txt 
 containing the regression analysis and working data along with the coefficients.
 
-![alt text](https://raw.githubusercontent.com/prilcool/Intel-devmesh-codeproject-two/main/Assets/out.PNG)
+![alt text](https://github.com/prilcool/Intel-devmesh-codeproject-two/blob/main/Assets/out.PNG)
 
 
