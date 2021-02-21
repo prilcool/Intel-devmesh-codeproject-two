@@ -14,7 +14,7 @@ Ensure that file exist in  lab/regression.cpp
 Run the following  jupyter notebook  Interest-on-account-audit-onemillion_records.ipynb
 
 ## Than Run  the following command
-! chmod 755 q; chmod 755 regression.sh;if [ -x "$(command -v qsub)" ]; then ./q regression.sh; else ./regression.sh; fi 
+     ! chmod 755 q; chmod 755 regression.sh;if [ -x "$(command -v qsub)" ]; then ./q regression.sh; else ./regression.sh; fi 
 
 ## Cross architecture compatibility GPU & CPU
      This code can Run on both on CPU and GPU of below specs
