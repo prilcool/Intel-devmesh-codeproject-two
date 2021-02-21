@@ -17,13 +17,13 @@ Run the following  jupyter notebook  Interest-on-account-audit-onemillion_record
 ! chmod 755 q; chmod 755 regression.sh;if [ -x "$(command -v qsub)" ]; then ./q regression.sh; else ./regression.sh; fi 
 
 ## Cross architecture compatibility GPU & CPU
-     This code will Run both on CPU and GPU of below specs
+     This code can Run on both on CPU and GPU of below specs
      
      if you select a GPU device than Device: Intel(R) Graphics Gen9 [0x3e96] will process in 1 second.
-     queue q(cpu_selector{});
+     queue q(gpu_selector{});
     
     if you select a CPU device than Device: Intel(R) Xeon(R) E-2176G CPU @ 3.70GHz will process in 3 seconds.
-     queue q(=gpu_selector{});
+     queue q(=cpu_selector{});
 
 
 On successfull run :
