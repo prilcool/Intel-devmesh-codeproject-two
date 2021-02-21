@@ -23,6 +23,18 @@
 
 using namespace sycl;
 
+// we create a custom pow function because GPU doesnt know default pow function
+double pow(double base_unit, double power_unit){
+    double result=base_unit;
+    int i=1;
+    while(i<power_unit){
+        result=result*base_unit;
+        i++;
+    }
+    
+  return result;  
+}
+
 
 
 int main() {
@@ -31,7 +43,14 @@ int main() {
     //N specifies the numbe of values in your dataset.
     
     constexpr int N=6; 
-    queue q(cpu_selector{});
+    
+    // if you select a GPU device than Device: Intel(R) Graphics Gen9 [0x3e96] will process in 1 second.
+     queue q(gpu_selector{});
+    
+    //if you select a CPU device than Device: Intel(R) Xeon(R) E-2176G CPU @ 3.70GHz will process in 3 seconds.
+    //to use cpu un comment the below and comment the above.
+    //queue q(cpu_selector{});
+    
     std::cout << "Device: " << q.get_device().get_info<info::device::name>() << std::endl;
 
 
